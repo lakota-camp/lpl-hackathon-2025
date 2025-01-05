@@ -1,1 +1,1 @@
-# lpl-hackathon-2025-
+# lpl-hackathon-2025
