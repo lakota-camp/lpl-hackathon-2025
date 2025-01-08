@@ -1,136 +1,81 @@
+/* LPL Branding */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ... */
-
+/* Base Styles */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Light Mode Colors */
+    --background: 240 8% 95%; /* LPL Grey */
+    --foreground: 225 73% 13%; /* LPL Navy */
+    --card: 240 8% 100%; /* White */
+    --card-foreground: 225 73% 13%; /* LPL Navy */
+    --popover: 240 8% 100%; /* White */
+    --popover-foreground: 225 73% 13%; /* LPL Navy */
+    --primary: 225 73% 13%; /* LPL Navy */
+    --primary-foreground: 240 8% 95%; /* LPL Grey */
+    --secondary: 225 30% 20%; /* Slightly muted navy */
+    --secondary-foreground: 240 8% 95%; /* LPL Grey */
+    --muted: 225 30% 90%; /* Light muted background */
+    --muted-foreground: 225 50% 30%; /* Muted foreground */
+    --accent: 220 60% 50%; /* Light blue accent */
+    --accent-foreground: 240 8% 95%; /* LPL Grey */
+    --destructive: 0 84% 60%; /* Red for destructive actions */
+    --destructive-foreground: 240 8% 95%; /* LPL Grey */
+    --border: 225 20% 80%; /* Light grey border */
+    --input: 225 20% 90%; /* Input background */
+    --ring: 225 73% 13%; /* LPL Navy */
+    --chart-1: 220 70% 50%; /* Chart blue */
+    --chart-2: 160 60% 45%; /* Chart green */
+    --chart-3: 30 80% 55%; /* Chart orange */
+    --chart-4: 280 65% 60%; /* Chart purple */
+    --chart-5: 340 75% 55%; /* Chart pink */
+    --radius: 0.5rem; /* Default border radius */
 
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-
-    --input: 214.3 31.8% 91.4%;
-
-    --ring: 222.2 84% 4.9%;
-
-    --chart-1: 12 76% 61%;
-
-    --chart-2: 173 58% 39%;
-
-    --chart-3: 197 37% 24%;
-
-    --chart-4: 43 74% 66%;
-
-    --chart-5: 27 87% 67%;
-
-    --radius: 0.5rem;
+    /* Custom Branding Colors */
+    --lpl-navy: 225 73% 13%;
+    --lpl-grey: 240 8% 95%;
+    --lpl-lightblue: 215 65% 60%;
+    --lpl-darkgrey: 225 20% 20%;
   }
+
   .dark {
-    --background: 222.2 84% 4.9%;
-
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-
-    --input: 217.2 32.6% 17.5%;
-
-    --ring: 212.7 26.8% 83.9%;
-
-    --chart-1: 220 70% 50%;
-
-    --chart-2: 160 60% 45%;
-
-    --chart-3: 30 80% 55%;
-
-    --chart-4: 280 65% 60%;
-
-    --chart-5: 340 75% 55%;
+    /* Dark Mode Colors */
+    --background: 225 73% 13%; /* LPL Navy */
+    --foreground: 240 8% 95%; /* LPL Grey */
+    --card: 225 30% 20%; /* Dark navy card */
+    --card-foreground: 240 8% 95%; /* LPL Grey */
+    --popover: 225 30% 20%; /* Dark navy popover */
+    --popover-foreground: 240 8% 95%; /* LPL Grey */
+    --primary: 240 8% 95%; /* LPL Grey */
+    --primary-foreground: 225 73% 13%; /* LPL Navy */
+    --secondary: 240 8% 50%; /* Muted grey */
+    --secondary-foreground: 240 8% 95%; /* LPL Grey */
+    --muted: 240 8% 50%; /* Muted background */
+    --muted-foreground: 240 8% 95%; /* Muted foreground */
+    --accent: 215 65% 60%; /* Light blue accent */
+    --accent-foreground: 240 8% 95%; /* LPL Grey */
+    --destructive: 0 62% 40%; /* Darker red */
+    --destructive-foreground: 240 8% 95%; /* LPL Grey */
+    --border: 240 8% 50%; /* Dark grey border */
+    --input: 225 30% 20%; /* Dark navy input */
+    --ring: 240 8% 95%; /* LPL Grey ring */
+    --chart-1: 220 70% 50%; /* Chart blue */
+    --chart-2: 160 60% 45%; /* Chart green */
+    --chart-3: 30 80% 55%; /* Chart orange */
+    --chart-4: 280 65% 60%; /* Chart purple */
+    --chart-5: 340 75% 55%; /* Chart pink */
   }
 }
 
+/* Apply Base Styles */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* Chart Colors */
-@layer base {
-  :root {
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-  }
-
-  .dark {
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
   }
 }
