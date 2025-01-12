@@ -11,13 +11,23 @@ import { DemoAreaGraph } from "./charts/DemoAreaGraph";
 import { PieDonut } from "./charts/DemoPieDonut";
 import { Button } from "@/components/ui/button";
 
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <h1 className="text-center text-5xl font-bold p-8">
+        <SidebarProvider>
+          <AppSidebar />
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
+        {/* <h1 className="text-center text-5xl font-bold p-8">
           LPL Hackathon 2025
         </h1>
         <div className="p-4 text-center">
@@ -57,7 +67,7 @@ function App() {
               <Route path="/chart-three" element={<PieDonut />} />
             </Routes>
           </div>
-        </Router>
+        </Router> */}
       </ThemeProvider>
     </QueryClientProvider>
   );
