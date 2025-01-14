@@ -26,11 +26,12 @@
     --border: 225 20% 80%; /* Light grey border */
     --input: 225 20% 90%; /* Input background */
     --ring: 225 73% 13%; /* LPL Navy */
-    --chart-1: 220 70% 50%; /* Chart blue */
-    --chart-2: 160 60% 45%; /* Chart green */
-    --chart-3: 30 80% 55%; /* Chart orange */
-    --chart-4: 280 65% 60%; /* Chart purple */
-    --chart-5: 340 75% 55%; /* Chart pink */
+    --chart-1: 225 73% 13%; /* LPL Navy */
+    --chart-2: 215 65% 60%; /* LPL Light Blue */
+    --chart-3: 22 99% 35%; /* LPL Orange */
+    --chart-4: 225 20% 20%; /* LPL Dark Grey */
+    --chart-5: 240 8% 95%; /* LPL Grey */
+    --chart-5: 225 30% 20%; /* Slightly muted navy */
     --radius: 0.5rem; /* Default border radius */
 
     /* Custom Branding Colors */
@@ -69,11 +70,11 @@
     --border: 240 8% 50%; /* Dark grey border */
     --input: 225 30% 20%; /* Dark navy input */
     --ring: 240 8% 95%; /* LPL Grey ring */
-    --chart-1: 220 70% 50%; /* Chart blue */
-    --chart-2: 160 60% 45%; /* Chart green */
-    --chart-3: 30 80% 55%; /* Chart orange */
-    --chart-4: 280 65% 60%; /* Chart purple */
-    --chart-5: 340 75% 55%; /* Chart pink */
+    --chart-1: 215 65% 60%; /* LPL Light Blue */
+    --chart-2: 22 99% 35%; /* LPL Orange */
+    --chart-3: 240 8% 95%; /* LPL Grey */
+    --chart-4: 225 73% 13%; /* LPL Navy */
+    --chart-5: 225 30% 20%; /* Slightly muted navy */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
