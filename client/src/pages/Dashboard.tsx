@@ -2,11 +2,11 @@ import { BarChart2, Users } from "lucide-react";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { ChartOne } from "../components/dashboard/ChartOne";
 import { ChartTwo } from "../components/dashboard/ChartTwo";
-import { ChartThree } from "../components/dashboard/ChartThree";
 import { ChartFour } from "../components/dashboard/ChartFour";
 import { ChartFive } from "../components/dashboard/ChartFive";
 
 export default function Dashboard() {
+  // Mock data
   const statsData = [
     {
       title: "Total Revenue",
@@ -38,20 +38,20 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-6 m-2">
+      <h1 className="text-2xl font-semibold">Dashboard</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {statsData.map((stat, index) => (
           <StatsCard key={index} {...stat} />
         ))}
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-4">
         <div className="lg:col-span-2">
           <ChartOne />
         </div>
         <div className="lg:col-span-2">
           <ChartTwo />
         </div>
-
         <div className="lg:col-span-2">
           <ChartFour />
         </div>
