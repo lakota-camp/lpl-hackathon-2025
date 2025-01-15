@@ -1,9 +1,10 @@
 import { BarChart2, Users } from "lucide-react";
-import { StatsCard } from "@/components/dashboard/StatsCard";
+import { StatsCard } from "../components/dashboard/StatsCard";
 import { ChartOne } from "../components/dashboard/ChartOne";
 import { ChartTwo } from "../components/dashboard/ChartTwo";
 import { ChartFour } from "../components/dashboard/ChartFour";
 import { ChartFive } from "../components/dashboard/ChartFive";
+import { DemoLineChart } from "../components/dashboard/charts/DemoLineChart";
 
 export default function Dashboard() {
   // Mock data
@@ -53,10 +54,13 @@ export default function Dashboard() {
           <ChartTwo />
         </div>
         <div className="lg:col-span-2">
-          <ChartFour />
+          <ChartFive />
         </div>
         <div className="lg:col-span-2">
-          <ChartFive />
+          <DemoLineChart />
+        </div>
+        <div className="lg:col-span-4">
+          <ChartFour />
         </div>
       </div>
     </div>
