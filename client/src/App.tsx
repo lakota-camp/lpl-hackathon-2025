@@ -1,6 +1,6 @@
 import "./App.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import MainLayout from "./layouts/MainLayout";
@@ -23,7 +23,11 @@ function App() {
 
             {/* Dashboard Layout for dashboard-specific routes */}
             <Route element={<DashboardLayout />}>
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/dashboard/*" element={<Dashboard />}>
+                <Route path="analytics" element={<div>Analytics</div>} />
+                <Route path="settings" element={<div>Settings</div>} />
+                <Route path="predictions" element={<div>Predictions</div>} />
+              </Route>
             </Route>
           </Routes>
         </Router>

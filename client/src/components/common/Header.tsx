@@ -26,16 +26,16 @@ export default function Header({ setIsSidebarOpen, isSidebarOpen }) {
         </Link>
         <Navbar />
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon">
+          {/* <Button variant="ghost" size="icon">
             <Search className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon">
             <Bell className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" className="gap-2">
-            <span>LPL Financial Employee</span>
+          </Button> */}
+          {/* <Button variant="ghost" className="gap-2">
+            <span>Demo User</span>
             <ChevronDown className="h-4 w-4" />
-          </Button>
+          </Button> */}
           <ModeToggle />
         </div>
       </div>

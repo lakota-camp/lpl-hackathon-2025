@@ -5,6 +5,7 @@ import { ChartTwo } from "../components/dashboard/ChartTwo";
 import { ChartFour } from "../components/dashboard/ChartFour";
 import { ChartFive } from "../components/dashboard/ChartFive";
 import { DemoLineChart } from "../components/dashboard/charts/DemoLineChart";
+import { Outlet } from "react-router-dom";
 
 export default function Dashboard() {
   // Mock data
@@ -40,6 +41,9 @@ export default function Dashboard() {
   return (
     <div className="space-y-6 m-2">
       <h1 className="text-2xl font-semibold">Dashboard</h1>
+      <h1 className="text-2xl font-semibold">
+        <Outlet />
+      </h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {statsData.map((stat, index) => (
           <StatsCard key={index} {...stat} />
