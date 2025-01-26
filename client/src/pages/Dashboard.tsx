@@ -20,6 +20,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import AlertsPage from './Alerts'; // added new import for Alerts Page that i have created - evidently is wrong
 
 export default function Dashboard() {
   // Mock data
