@@ -27,6 +27,5 @@ def get_cost_data():
 
 if __name__ == '__main__':
     cost_data = get_cost_data()
-    for data in cost_data:
-        print(json.dumps(data, indent=4, default=str))
+    print(json.dumps(cost_data, indent=4, default=str)) 
         
