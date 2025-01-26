@@ -10,13 +10,12 @@ type SidebarProps = {
 export default function Sidebar({ isOpen }: SidebarProps) {
   const navItems = [
     { icon: Home, label: "Overview", path: "/dashboard" },
-    { icon: BarChart2, label: "Analytics", path: "/dashboard/analytics" },
+    { icon: BarChart2, label: "Alerts", path: "/dashboard/alerts" },
     {
       icon: TrendingUpDown,
       label: "Predictions",
       path: "/dashboard/predictions",
     },
-    { icon: Settings, label: "Settings", path: "/dashboard/settings" },
   ];
 
   return (
